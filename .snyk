@@ -1,0 +1,13 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.12.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:minimatch:20160620':
+    - dalek-driver-native > dalek-internal-webdriver > wd > archiver > glob > minimatch:
+        patched: '2018-10-29T23:08:29.687Z'
+  'npm:tunnel-agent:20170305':
+    - dalek-browser-phantomjs > phantomjs > request > tunnel-agent:
+        patched: '2018-10-29T23:08:29.687Z'
+    - dalek-driver-native > dalek-internal-webdriver > wd > request > tunnel-agent:
+        patched: '2018-10-29T23:08:29.687Z'
